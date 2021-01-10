@@ -28,8 +28,6 @@ dbl.on('posted', () => {
 })
 
 bot.on('message', (msg) => {
-    // Sender is a bot and should not be served
-    if (msg.author.bot) return;
 
     // Sender is the bot itself and should not be served
     if (msg.author.id === bot.user.id) return;
